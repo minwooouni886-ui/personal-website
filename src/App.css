@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+.page h1 {
+  margin: 0;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.1;
+  max-width: 90vw;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    color: #f0f0f0;
+    background: #1a1a1a;
+  }
+}
+
+.status {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.65;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact a {
+  color: inherit;
+  display: inline-flex;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.contact a:hover {
+  opacity: 1;
+}
+
+#title {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
